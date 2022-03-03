@@ -73,11 +73,11 @@ class Paginator:
             else:
                 return [
                     [   self.client.add_callback(
-                            Button(style=ButtonStyle.blue, emoji="??),
+                            Button(style=ButtonStyle.blue, emoji="⏮"),
                             self.button_first_callback,
                         ),
                         self.client.add_callback(
-                            Button(style=ButtonStyle.blue, emoji="?截?),
+                            Button(style=ButtonStyle.blue, emoji="◀️"),
                             self.button_left_callback,
                         ),
                         Button(
@@ -85,11 +85,11 @@ class Paginator:
                             disabled=True,
                         ),
                         self.client.add_callback(
-                            Button(style=ButtonStyle.blue, emoji="?띰툘"),
+                            Button(style=ButtonStyle.blue, emoji="▶️"),
                             self.button_right_callback,
                         ),
                         self.client.add_callback(
-                            Button(style=ButtonStyle.blue, emoji="??),
+                            Button(style=ButtonStyle.blue, emoji="⏭"),
                             self.button_last_callback,
                         ),
                     ]
@@ -118,11 +118,11 @@ class Paginator:
             else:
                 return [
                     [self.client.add_callback(
-                        Button(style=ButtonStyle.blue, emoji="??),
+                        Button(style=ButtonStyle.blue, emoji="⏮"),
                         self.button_first_callback,
                     ),
                         self.client.add_callback(
-                            Button(style=ButtonStyle.blue, emoji="?截?),
+                            Button(style=ButtonStyle.blue, emoji="◀️"),
                             self.button_left_callback,
                         ),
                         Button(
@@ -130,11 +130,11 @@ class Paginator:
                             disabled=True,
                         ),
                         self.client.add_callback(
-                            Button(style=ButtonStyle.blue, emoji="?띰툘"),
+                            Button(style=ButtonStyle.blue, emoji="▶️"),
                             self.button_right_callback,
                         ),
                         self.client.add_callback(
-                            Button(style=ButtonStyle.blue, emoji="??),
+                            Button(style=ButtonStyle.blue, emoji="⏭"),
                             self.button_last_callback,
                         ),
                     ]
