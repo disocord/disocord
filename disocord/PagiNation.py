@@ -16,7 +16,7 @@ class Paginator:
     def __init__(
         self,
         client: PycordComponents,
-        channel: Messageable,
+        respond: respond,
         ctx: Interaction,
         contents: List[str] = None,
         embeds: List[discord.Embed] = None,
@@ -26,7 +26,7 @@ class Paginator:
     ):
         self.context = ctx
         self.client = client
-        self.channel = channel
+        self.respond = respond
         self.contents = contents
         self.embeds = embeds
         self.use_select = use_select
@@ -144,11 +144,11 @@ class Paginator:
 
     async def start(self):
         if self.embeds == None:
-            self.msg = await self.channel.send(
+            self.msg = await self.respond(
                 content=self.contents[self.index], components=self.get_components()
             )
         else:
-            self.msg = await self.channel.send(
+            self.msg = await self.respond(
                 embed=self.embeds[self.index], components=self.get_components()
             )
 
