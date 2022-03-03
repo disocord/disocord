@@ -5,7 +5,7 @@ setup(
     name="disocord",
     license="MIT",
     version=__version__,
-    description="pycord 踰꾪듉 & 硫붾돱",
+    description="pycord 버튼 & 메뉴",
     author="disocord",
     author_email="disocord@disocord.kro.kr",
     url="https://github.com/disocord/disocord.paginator",
